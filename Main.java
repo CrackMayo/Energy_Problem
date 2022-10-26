@@ -14,10 +14,10 @@ public class energy {
         clientsNum = sc.nextInt();
         for (int i = 0; i < clientsNum; i++) {
             powerConsumption = sc.nextInt();
-            if(powerConsumption <= 1000){
+            if(powerConsumption <= 500){
                 charges = powerConsumption * normalRate;
             }else{
-                charges = (1000 * normalRate) + ((powerConsumption - 1000) * expensiveRate);
+                charges = (500 * normalRate) + ((powerConsumption - 500) * expensiveRate);
             }
             
             System.out.println(powerConsumption + " " + charges);
